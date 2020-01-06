@@ -8,7 +8,7 @@ function myConvert () {
         
 
         if  (amount == 0 || isNaN(amount) || amount=="") {
-            document.getElementById("message").innerHTML="you have to write correct value";
+            document.getElementById("message").innerHTML="should be write correct value";
             document.getElementById("message").style='background-color:red';
             return;
         };
