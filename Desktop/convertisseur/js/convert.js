@@ -10,6 +10,7 @@ function myConvert () {
         if  (amount == 0 || isNaN(amount) || amount=="") {
             document.getElementById("message").innerHTML="should be write correct value";
             document.getElementById("message").style='background-color:red';
+            document.getElementById("id_from").value = document.getElementById("id_to").value;
             return;
         };
         
@@ -35,7 +36,7 @@ function myConvert () {
             }
         }
         if (fromid == "CAD"){
-            switch (dromto){
+            switch (fromto){
                 case "euro":
                 result = amount*1.5;
                 break;
@@ -44,6 +45,7 @@ function myConvert () {
                 break;
             }
         }
+        
         
         var message = amount + " "+fromid+" is " +result+ " "+fromto;
         document.getElementById("message").style='background-color:rgb(75, 223, 82)';
