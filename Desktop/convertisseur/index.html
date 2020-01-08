@@ -8,12 +8,16 @@ ss<!DOCTYPE html>
     <link rel="stylesheet" href="css/convert.css">
 </head>
 <body>
-    <div class="container">
+    
+    <div class="container" onmousemove="myMouse(event)" onmouseout="clearCoor()">
     <h1>Convertisseur</h1>
+    
+    
 </div>
-<input class="entrer" type="text" id="entrer">
+
+<input class="entrer" type="text" id="entrer" onmousemove="myMouse(event)" onmouseout="clearCoor()" onkeyup="myOnkey()">
 <button onclick="myConvert()">calculate</button>
-    <div class="donné">
+    <div class="parent">
         <label class="label">From</label>
         
             <div class="sel">
@@ -27,21 +31,16 @@ ss<!DOCTYPE html>
             <label class="label">to</label>
             <div class="sel">
                
-                        <select id="id_to">
+                        <select class="sel" id="id_to">
                             <option value="Dollars">Dollars</option>
                             <option value="euro">euro</option>
                             <option value="CAD">CAD</option>
                         </select>
                     
             </div>
-            
-        
-       
-        </div>
-    </div>
-    
+        </div>    
    
-    <textarea id="message"></textarea>
+    <textarea id="message" ></textarea>
     <script src="js/convert.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 .container {
     background-color:burlywood;
@@ -11,6 +12,10 @@ h1 {
     padding:10px;
     margin:10px;
     
+}
+.parent {
+    background-color:rgb(216, 204, 164);
+    width: 272px;
 }
 button {
     height: 35px;
