@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    
 }
 .container {
     background-color:burlywood;
@@ -13,23 +14,27 @@ h1 {
     margin:10px;
     
 }
-.parent {
-    background-color:rgb(216, 204, 164);
-    width: 272px;
-}
+
+
 button {
     height: 35px;
     background-color:rgb(223, 75, 75);
+    margin-left:20px;
+    margin:30px;
 }
 button:hover {
     background-color:rgb(75, 223, 82);
+    
 }
+
 
 .entrer{
     padding:10px;
     margin-top: 12px;
+    margin-bottom:10px;
     background-color: rgb(180, 240, 180);
     height:35px;
+    width: 79px;
 }
 
 textarea{
@@ -37,14 +42,30 @@ textarea{
     margin-top:30px;
     background-color:white;
     width: 258px;
+    
 }
 .sel{
     display:inline-block;
     margin:10px;
-    background-color:rgb(227, 240, 180);
-
+    background:rgb(227, 240, 180);
+    width: 60px;
+    color:rgb(0, 17, 255);
 }
 .id_to {
     background-color:red;
+}
+.Distance   {
+    display:none;
+    
+}
+.Weight {
+    display:none;
+}
+.Devise{
+    display:none;
+}
+.alll{
+    background-color:rgb(227, 240, 180);
+    width: 263px;
 }
 

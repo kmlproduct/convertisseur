@@ -1,4 +1,4 @@
-ss<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,8 +15,15 @@ ss<!DOCTYPE html>
     
 </div>
 
-<input class="entrer" type="text" id="entrer" onmousemove="myMouse(event)" onmouseout="clearCoor()" onkeyup="myOnkey()">
-<button onclick="myConvert()">calculate</button>
+<button  onclick="myDistanceBlock()">convert distance</button>
+<button  onclick="myWeightBlock()">convert weight</button>
+<button  onclick="myDevisBlock()">convert devis</button>
+<!-- convettiDevise -->
+
+<div class="alll">
+<div class="Devise" id="Devise">
+<input onkeyup="myConvert()" class="entrer" type="text" id="entrer" onmousemove="myMouse(event)" onmouseout="clearCoor()" onkeyup="myOnkey()">
+
     <div class="parent">
         <label class="label">From</label>
         
@@ -38,9 +45,87 @@ ss<!DOCTYPE html>
                         </select>
                     
             </div>
-        </div>    
+        </div>  
+          
    
     <textarea id="message" ></textarea>
+   
+</div>
+</div>
+<!-- convettiDevise -->
+
+<!-- convertToDistance -->
+
+<div class="alll">
+<div class="Distance" id="Distance">
+    <input onkeyup="myDistance()" class="entrer" id="up" type="text" >
+        <div class="Devis">
+            <label class="label">From</label>
+            
+                <div class="sel">
+                    <select class="sel" id="id_fromDistance" >
+                        <option value="km">km</option>
+                        <option value="m">m</option>
+                        <option value="cm">cm</option>
+                        <option value="mm">mm</option>
+                        
+                    </select class="sel">
+                     
+                </div>
+                <label class="label">to</label>
+                <div class="sel">
+                   
+                            <select class="sel" id="id_toDistance">
+                        <option value="km">km</option>
+                        <option value="m">m</option>
+                        <option value="cm">cm</option>
+                        <option value="mm">mm</option>
+                            </select>
+                        
+                </div>
+            </div>    
+       
+    <textarea id="messageDistance" ></textarea>
+       
+    </div>
+    </div>
+    <!-- convertToDistance -->
+
+    <!-- convertToWeight -->
+
+    <div class="alll">
+    <div class="Weight" id="Weight">
+        <input onkeyup="myWeight()" id="entrerWeight" class="entrer" type="text">
+            <div class="Devis">
+                <label class="label">From</label>
+                
+                    <div class="sel">
+                        <select class="sel" id="id_fromWeight" >
+                            <option value="t">tonne</option>
+                            <option value="kg">kg</option>
+                            <option value="g">gramme</option>
+                            <option value="mg">mg</option>
+                        </select class="sel">
+                         
+                    </div>
+                    <label class="label">to</label>
+                    <div class="sel">
+                       
+                                <select class="sel" id="id_toWeight" >
+                            <option value="t">tonne</option>
+                            <option value="kg">kg</option>
+                            <option value="g">gramme</option>
+                            <option value="mg">mg</option>
+                                </select>
+                            
+                    </div>
+                </div>    
+           
+            <textarea id="messageWeight" ></textarea>
+           
+        </div>
+    </div>
+    <!-- convertToWeight -->
     <script src="js/convert.js"></script>
 </body>
 </html>
