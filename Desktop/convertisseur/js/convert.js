@@ -154,9 +154,6 @@ function myWeight() {
         if  (amount == 0 || isNaN(amount) || (fromid) == (fromto)){
             document.getElementById("messageWeight").innerHTML="should be write correct value";
             document.getElementById("messageWeight").style='background-color:red';
-            
-        
-        
             return;
             
         }
