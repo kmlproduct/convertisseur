@@ -1,0 +1,43 @@
+button {
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+}
+BUTTON:hover{
+    background-color: bisque;
+}
+.dis-none{
+    display: none;
+}
+.container {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+.container1 {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(172, 127, 255);
+}
+.container2 {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 178, 127);
+}
+.container3 {
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 127, 217);
+}
